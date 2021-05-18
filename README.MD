@@ -2,16 +2,24 @@
 
 ⚡ To share at least with me ⚡
 
+## 🚀 General tips
+
+- add a `.npmrc` file like [this](./.npmrc).
+
 ## 🧰 Svelte & Svelte Add
 
 Nide tool to start a project in the right way: [svelte-add](https://github.com/svelte-add/svelte-add)
 
 ```bash
 npm init svelte@next my-cool-app
+yarn add @sveltejs/adapter-node -D
 
-npx svelte-add tailwindcss
+npx svelte-add tailwindcss --jit
 npx svelte-add graphql
 ```
+
+Add [app.postcss](./skm/app.postcss) under `src`
+Add [\_\_layout.svelte](./skm/__layout.svelte) under `src/routes`
 
 ## 📂 .fttemplates
 
