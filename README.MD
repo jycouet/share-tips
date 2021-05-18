@@ -1,8 +1,19 @@
-# A collection of tips that I want to share
+# Tips that I want to share 🚲
 
-// To share at least with me ⚡
+⚡ To share at least with me ⚡
 
-## .fttemplates
+## 🧰 Svelte & Svelte Add
+
+Nide tool to start a project in the right way: [svelte-add](https://github.com/svelte-add/svelte-add)
+
+```bash
+npm init svelte@next my-cool-app
+
+npx svelte-add tailwindcss
+npx svelte-add graphql
+```
+
+## 📂 .fttemplates
 
 Simply grab your favorite [fttemplates](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure)
 
@@ -12,16 +23,7 @@ Simply grab your favorite [fttemplates](https://marketplace.visualstudio.com/ite
 npx degit github:jycouet/share-tips/fttemplates/module-NewEntityResolversGetCreate .fttemplates/module-NewEntityResolversGetCreate
 ```
 
-## Svelte Add
-
-```bash
-npm init svelte@next my-cool-app
-
-npx svelte-add tailwindcss
-npx svelte-add graphql
-```
-
-## skm - SvelteKit Modules
+## 💯 skm - SvelteKit Modules
 
 add codegen:
 
@@ -41,7 +43,7 @@ To trigger the codegen, add in package.json
 
 Check: [./skm/codegen-skm.yml](./codegen/codegen-skm.yml) to get the prefect codegen for SvelteKit (graphql-modules & client)
 
-## Nice scripts in package.json
+## 💡 Nice scripts in package.json
 
 - clean your repo (coming back to a git clone)
 
@@ -54,7 +56,7 @@ Check: [./skm/codegen-skm.yml](./codegen/codegen-skm.yml) to get the prefect cod
   "update": "npm i -g npm-check-updates && ncu -u -p yarn && yarn"
   ```
 
-## tools
+## 🔧 tools
 
 ### graphql-codegen-modules-merge-resolver
 
