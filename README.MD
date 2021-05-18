@@ -4,4 +4,4 @@ Simply grab your favorite [fttemplates](https://marketplace.visualstudio.com/ite
 
 ## module-simple
 
-`npx degit github:jycouet/share-fttemplates/module-simple#master .fttemplates/module-simple`
+`npx degit github:jycouet/share-tips/fttemplates/module-simple#master .fttemplates/module-simple`
