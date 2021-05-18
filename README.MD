@@ -6,4 +6,4 @@ Simply grab your favorite [fttemplates](https://marketplace.visualstudio.com/ite
 
 ### module-NewEntityResolversGetCreate
 
-`npx degit github:jycouet/share-tips/fttemplates/module-simple#master .fttemplates/module-NewEntityResolversGetCreate`
+`npx degit github:jycouet/share-tips/fttemplates/module-NewEntityResolversGetCreate .fttemplates/module-NewEntityResolversGetCreate`
