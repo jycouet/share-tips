@@ -1,6 +1,0 @@
-query Get[FTName|pascalcase] {
-	[FTName|camelcase] {
-		id
-		name
-	}
-}

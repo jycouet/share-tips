@@ -25,10 +25,10 @@ Add [\_\_layout.svelte](./skm/__layout.svelte) under `src/routes`
 
 Simply grab your favorite [fttemplates](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure)
 
-### module-NewEntityResolversGetCreate
+### module-NewEntity
 
 ```bash
-npx degit github:jycouet/share-tips/fttemplates/module-NewEntityResolversGetCreate .fttemplates/module-NewEntityResolversGetCreate
+npx degit github:jycouet/share-tips/fttemplates/module-NewEntity .fttemplates/module-NewEntity
 ```
 
 ## 💯 skm - SvelteKit Modules
@@ -49,7 +49,7 @@ To trigger the codegen, add in package.json
 "gen": "graphql-codegen --config codegen-skm.yml",
 ```
 
-Check: [./skm/codegen-skm.yml](./codegen/codegen-skm.yml) to get the prefect codegen for SvelteKit (graphql-modules & client)
+Check: [./skm/codegen-skm.yml](./skm/codegen-skm.yml) to get the prefect codegen for SvelteKit (graphql-modules & client)
 
 ## 💡 Nice scripts in package.json
 

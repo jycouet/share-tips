@@ -1,50 +1,27 @@
-schema: './src/lib/modules/**/typedefs/*.gql'
+schema: ./src/lib/modules/**/typedefs/*.gql
 overwrite: true
-# documents:
-#   - './packages/client/src/graphql/**/*.gql'
+documents:
+  - ./src/lib/modules/**/graphql/*.gql
 generates:
+  # graphql-modules
   ./src/lib/modules/:
     preset: graphql-modules
     presetConfig:
-      importBaseTypesFrom: '../../../graphql/_gen/global-types'
+      importBaseTypesFrom: "../../../graphql/_gen/global-types"
       baseTypesPath: ../graphql/_gen/global-types.ts # Where to create the complete schema types!
       filename: _gen/module-types.ts # Where to create each module types!
     plugins:
       - typescript
       - typescript-resolvers
-
-  # ./packages/client/src/_gen/graphql.ts:
-  #   plugins:
-  #     - typescript
-  #     - typescript-operations
-  #     - svelte-apollo
-  #   config:
-  #     clientPath: 'src/graphql/apollo-client'
+  # graphql-client
+  ./src/lib/graphql/_gen/graphqlClient.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node
 
 config:
-  # use "import type" instead of "import"
   useTypeImports: true
-  # turn enums into types
-  # enumsAsTypes: true
-
-  # omitOperationSuffix: true
-  # dedupeOperationSuffix: true
-  # exportFragmentSpreadSubTypes: true
-  # experimentalFragmentVariables: true
-  # addUnderscoreToArgsType: true
-
-  # onlyOperationTypes: true
-  # preResolveTypes: true
-
-  # namingConvention: keep
-
-  # scalars:
-  #   UnsignedInt: number
-  #   URL: string
-  #   JSON: any # string | number | boolean | null | Array<Scalars['JSON']> | Scalars['JSONObject']
-  #   JSONObject: Record<string, any>
-  #   Date: string
-  #   DateTime: string
 
 hooks:
   afterAllFileWrite:
